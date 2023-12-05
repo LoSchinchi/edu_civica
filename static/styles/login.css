@@ -1,0 +1,65 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 35px;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+    background-color: #fff;
+}
+
+#tit {
+    margin: 0;
+    font-size: 18px;
+    flex: 1 1 auto;
+    color: #943434;
+}
+
+.a-in-navbar {
+    color: #212529;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 400ms ease;
+}
+
+.a-in-navbar:hover, .card-title {
+    color: #943434;
+}
+
+#main-image {
+    margin-top: 80px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-image img {
+    height: 100%;
+}
+
+#card {
+    width: 500px;
+    margin: 90px auto;
+}
+
+form {
+    background-color: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form > div {
+    width: 100%;
+}
+
+.btn {
+    width: 200px;
+    margin-top: 30px;
+}
