@@ -6,3 +6,5 @@ const setBtnDisabled = () => BTN_LOGIN.disabled = !EMAIL.value.trim() || !PASSWO
 
 EMAIL.addEventListener('keyup', setBtnDisabled);
 PASSWORD.addEventListener('keyup', setBtnDisabled);
+
+setBtnDisabled();

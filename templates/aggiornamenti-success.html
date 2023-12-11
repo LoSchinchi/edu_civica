@@ -51,5 +51,28 @@
         <button type="submit" class="btn" style="background-color: #d1b972; padding: 10px 50px">AGGIORNA</button>
     </form>
     <div id="end"></div>
+
+    <button style="display: none" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-active-modal">
+        Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aggiornamenti eseguiti con successo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    I dati inseriti sono corretti, grazie a te potremo aggiornare il dispositivo e migliorare la sicurezza in azienda
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/active-modal.js" type="text/javascript"></script>
 </body>
 </html>

